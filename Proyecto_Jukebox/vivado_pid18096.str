@@ -1,0 +1,772 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 18096
+License: Customer
+
+Current time: 	Sun Dec 08 19:23:47 CET 2019
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 0 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilix/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilix/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	asumo
+User home directory: C:/Users/asumo
+User working directory: D:/ARCHIVOS/sed/Proyecto_Jukebox
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: D:/Xilix/Vivado
+HDI_APPROOT: D:/Xilix/Vivado/2019.1
+RDI_DATADIR: D:/Xilix/Vivado/2019.1/data
+RDI_BINDIR: D:/Xilix/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/asumo/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/asumo/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/asumo/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/Xilix/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado.log
+Vivado journal file location: 	D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado.jou
+Engine tmp dir: 	D:/ARCHIVOS/sed/Proyecto_Jukebox/.Xil/Vivado-18096-LAPTOP-2F0A366G
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilix/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/Xilix/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilix/Vivado/2019.1
+XILINX_SDK: D:/Xilix/SDK/2019.1
+XILINX_VIVADO: D:/Xilix/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/Xilix/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 611 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: D:\ARCHIVOS\sed\Proyecto_Jukebox\Proyecto_Jukebox.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/ARCHIVOS/sed/Proyecto_Jukebox/Proyecto_Jukebox.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/ARCHIVOS/sed/Proyecto_Jukebox/Proyecto_Jukebox.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/UPM/4.1/SED - Sistemas Electronicos Digitales/TRABAJOS/Trabajo FPGA - Jukebox/Proyecto_Jukebox' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 108 MB (+111211kb) [00:00:12]
+// [Engine Memory]: 667 MB (+548276kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  4341 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilix/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 699 MB. GUI used memory: 67 MB. Current time: 12/8/19, 7:23:51 PM CET
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 743.633 ; gain = 107.969 
+// Project name: Proyecto_Jukebox; location: D:/ARCHIVOS/sed/Proyecto_Jukebox; part: xc7a100tcsg324-1
+// [Engine Memory]: 716 MB (+15579kb) [00:00:16]
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:23:59 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+// D (cl): Invalid Top Module: addNotify
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:00 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:00 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+dismissDialog("Invalid Top Module"); // D (cl)
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:02 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+closeMainWindow("Proyecto_Jukebox - [D:/ARCHIVOS/sed/Proyecto_Jukebox/Proyecto_Jukebox.xpr] - Vivado 2019.1"); // cl
+// A (cl): Exit Vivado: addNotify
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:03 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:03 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:03 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:03 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:03 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:04 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:04 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:04 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:04 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:04 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:05 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:05 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:05 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:05 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:05 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+// [GUI Memory]: 115 MB (+1461kb) [00:00:29]
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:05 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:06 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:06 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:06 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:06 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+// [GUI Memory]: 123 MB (+2316kb) [00:00:30]
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:06 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:06 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:06 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:06 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2019.1 (64-bit)
+# SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+# Current time: Sun Dec 08 19:24:07 CET 2019
+# Process ID (PID): 18096
+# OS: Windows 10
+# User: asumo
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+java.lang.RuntimeException: javax.imageio.IIOException: Error skipping PNG metadata (See D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado_pid18096.debug)
+*/

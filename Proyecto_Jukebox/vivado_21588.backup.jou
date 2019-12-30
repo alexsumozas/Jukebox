@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec  8 19:16:48 2019
+# Process ID: 21588
+# Current directory: D:/ARCHIVOS/sed/Proyecto_Jukebox
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22792 D:\ARCHIVOS\sed\Proyecto_Jukebox\Proyecto_Jukebox.xpr
+# Log file: D:/ARCHIVOS/sed/Proyecto_Jukebox/vivado.log
+# Journal file: D:/ARCHIVOS/sed/Proyecto_Jukebox\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ARCHIVOS/sed/Proyecto_Jukebox/Proyecto_Jukebox.xpr
+update_compile_order -fileset sources_1
