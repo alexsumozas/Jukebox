@@ -1,0 +1,28 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_arith.ALL;
+USE ieee.std_logic_unsigned.ALL;
+
+ENTITY Decoder IS
+PORT (
+code : IN integer;
+led : OUT std_logic_vector(6 DOWNTO 0)
+);
+END ENTITY Decoder;
+
+ARCHITECTURE dataflow OF Decoder IS
+BEGIN
+WITH code SELECT
+led <= "0000001" WHEN 0,
+"1001111" WHEN 1,
+"0010010" WHEN 2,
+"0000110" WHEN 3,
+"1001100" WHEN 4,
+"0100100" WHEN 5,
+"0100000" WHEN 6,
+"0001111" WHEN 7,
+"0000000" WHEN 8,
+"0000100" WHEN 9,
+"1111110" WHEN others;
+
+END ARCHITECTURE dataflow;
