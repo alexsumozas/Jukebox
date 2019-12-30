@@ -1,0 +1,58 @@
+library IEEE;
+use IEEE.Std_logic_1164.all;
+use IEEE.Numeric_Std.all;
+
+entity top_tb is
+end;
+
+architecture bench of top_tb is
+
+  component top
+   Port ( entrada1 : IN integer;
+           entrada2 : IN integer :=0;
+      digcontrol: out std_logic_vector (7 downto 0):="11111111";
+     led_sal:OUT std_logic_vector(6 DOWNTO 0);
+     clk:in std_logic
+     );
+  end component;
+
+  signal entrada1: integer:=0;
+  signal entrada2: integer :=9;
+  signal digcontrol: std_logic_vector (7 downto 0):="11111111";
+  signal led_sal: std_logic_vector(6 DOWNTO 0) ;
+  signal clock : std_logic :='0';
+
+begin
+
+  uut: top port map ( entrada1   => entrada1,
+                      entrada2   => entrada2,
+                      digcontrol => digcontrol,
+                      led_sal    => led_sal ,
+                      clk=>clock);
+
+  stimulus: process
+  begin
+  
+    -- Put initialisation code here
+
+ clock<=not clock;
+    wait for 50ns;
+    
+    -- Put test bench stimulus code here
+
+    wait;
+    
+  end process;
+  process (clock)
+    begin
+    if entrada1<12 then
+   entrada1<=entrada1+1;
+   end if ;
+    if entrada2>0 then
+   entrada2<=entrada2-1;
+   end if ;
+   
+   end process;
+
+
+end;
