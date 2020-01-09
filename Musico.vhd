@@ -15,12 +15,14 @@ end Reproductor;
 architecture Behavioral of Reproductor is
        
         signal note: STD_LOGIC ;
+        constant MAX_AUX: natural := 500;
 begin
         
         PROCESS  
             variable t: time  ;        --Semiperiodo de la onda
             variable t_on: time ;        --Semiperiodo de la onda
-           
+            variable auxiliar: natural range 0 to MAX_AUX :=0  ;
+            
           BEGIN
              t  := 1000ms /frecuencia_R ;        --Semiperiodo de la onda
              t_on := (1000ms * ganancia_R/100) / frecuencia_R;        --Semiperiodo de la onda
@@ -29,13 +31,20 @@ begin
             note<='0';
             wait for 5ns;  --Para que no se bloquee
                 
-        else        
-            note<='1';
-            wait for t_on;
-            note<='0';
-            wait for (t - t_on);
+        else   
+            if ( (auxiliar rem 2) = 0 )   then
+                 note<='1';
+                wait for t_on;
+             else
+                note<='0';
+                 wait for (t - t_on);
+            end if;
         end if;
-                   
+        
+        if (auxiliar < MAX_AUX) then       auxiliar := auxiliar + 1;   
+        elsif (auxiliar = MAX_AUX) then    auxiliar := 0; 
+        end if;  
+         
         END PROCESS;
         
         nota_R <= note;
