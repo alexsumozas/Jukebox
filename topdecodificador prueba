@@ -1,0 +1,81 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 20.12.2019 11:38:11
+-- Design Name: 
+-- Module Name: top - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+entity top is
+Port ( 
+  --  entrada1 : IN integer;
+  --  entrada2 : IN integer :=0;
+    digcontrol: out std_logic_vector (7 downto 0):="11111111";
+    led_sal:OUT std_logic_vector(6 DOWNTO 0);
+   
+    clk :in std_logic :='0' );
+end top;
+
+architecture Behavioral of top is
+signal led1: std_logic_vector (6 DOWNTO 0):="1111111";
+signal led2: std_logic_vector (6 DOWNTO 0):="1111111";
+signal code1: integer range 0 to 9 :=1;
+signal code2: integer range 0 to 9 :=6;
+signal  digsel:   std_logic_vector ( 7 DOWNTO 0 ):="11111111";
+signal bandera :   std_logic :='0';
+ 
+COMPONENT decoder
+PORT (
+code : IN integer ;
+led : OUT std_logic_vector(6 DOWNTO 0)
+);
+END COMPONENT;
+begin
+Inst_decoder1: decoder PORT MAP (
+code => code1 ,
+led =>led1
+);
+Inst_decoder2: decoder PORT MAP (
+code => code2 ,
+led =>led2
+);
+
+process
+begin
+    if bandera='0'then
+        digsel<="01111111";
+        digcontrol<=digsel;
+        wait for 5 ns;
+        led_sal<=led1;
+        bandera<='1';
+        wait for 4ms;
+    end if;
+    if bandera='1'then
+        digsel<="11111110";
+        digcontrol<=digsel;
+        bandera<='0';
+        wait for 5 ns;
+        led_sal<=led2;
+        wait for 4ms;
+     end if;
+    
+end process;
+end Behavioral;
